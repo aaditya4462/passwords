@@ -18,7 +18,7 @@ class RegisterActivity : AppCompatActivity() {
         textView.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-
         }
+        textView==textView
     }
 }
