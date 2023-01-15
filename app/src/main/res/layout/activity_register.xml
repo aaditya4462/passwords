@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="278dp"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="203dp"
+        android:background="@drawable/round_btn_grey"
+        android:gravity="center"
+        android:text="Already Have An Account?" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Textinputuser"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:hint="Username"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:textColor="#363A43" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextinputPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="392dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="0dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:hint="Password"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:textColor="#363A43" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextinputRePass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="392dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="0dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:hint="Re-type Password"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:textColor="#363A43" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

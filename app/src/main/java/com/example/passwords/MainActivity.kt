@@ -15,8 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         val et_name: EditText = findViewById(R.id.et_name)
         val et_name2: EditText = findViewById(R.id.et_name2)
-        val button: Button = findViewById(R.id.button)
+        val button: TextView = findViewById(R.id.button)
+        val register:TextView = findViewById(R.id.register)
 
+        register.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+
+        }
         button.setOnClickListener {
             if (et_name.text.isEmpty() || et_name2.text.isEmpty()) {
                 Toast.makeText(
