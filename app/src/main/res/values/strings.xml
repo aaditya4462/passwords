@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">passwords</string>
     <string name="name">Name</string>
-    <string name="password">Password</string>
+    <string name="password"> Password</string>
     <string name="Username" />
+    <string name="email"> Email</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help </string>
+    <string name="rateus">Rate Us</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="Share">Share</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="ExitfromApp">Exit from App</string>
+    <string name="enter_the_otp">Enter the OTP</string>
+    <string name="new_password">New password</string>
+    <string name="re_enter_new_password">Re-enter New Password</string>
+    <string name="enter_username">Enter username</string>
 </resources>

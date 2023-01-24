@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,40 +7,49 @@
     android:background="#121212"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/button"
-        android:layout_width="162dp"
-        android:layout_height="43dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginBottom="110dp"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
         android:background="@drawable/round_btn"
         android:gravity="center"
         android:text="LOG IN"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cardview"
+        app:layout_constraintVertical_bias="0.747" />
 
     <TextView
         android:id="@+id/register"
         android:layout_width="301dp"
         android:layout_height="47dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
         android:background="@drawable/round_btn_grey"
         android:gravity="center"
         android:text="No account?Register Now"
-        android:textColor="#4E4E4E" />
+        android:textColor="#4E4E4E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cardview"
+        app:layout_constraintVertical_bias="0.813" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Cardview"
+
         android:layout_width="380dp"
         android:layout_height="420dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginRight="10dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212">
 
         <ImageView
             android:layout_width="160dp"
@@ -85,7 +94,7 @@
                 android:layout_width="357dp"
                 android:layout_height="54dp"
                 android:layout_marginLeft="5dp"
-                android:hint="@string/name"
+                android:hint="@string/email"
                 android:imeOptions="actionGo"
                 android:inputType="textCapWords"
                 android:textColor="#363A43"
@@ -95,5 +104,17 @@
 
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cardview"
+        app:layout_constraintVertical_bias="0.241" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 

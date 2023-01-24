@@ -23,7 +23,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logintext"
         android:layout_width="261dp"
         android:layout_height="46dp"
         android:layout_alignParentBottom="true"
@@ -46,11 +46,11 @@
         android:background="@color/white">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email"
             android:layout_width="357dp"
             android:layout_height="54dp"
-            android:hint="Username"
+            android:hint="Email"
             android:imeOptions="actionGo"
-            android:inputType="textPassword"
             android:textColor="#363A43" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +67,7 @@
         android:layout_marginEnd="0dp">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
             android:layout_width="357dp"
             android:layout_height="54dp"
             android:hint="Password"
@@ -88,6 +89,7 @@
         android:layout_marginEnd="0dp">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/repaswword"
             android:layout_width="357dp"
             android:layout_height="54dp"
             android:hint="Re-type Password"
